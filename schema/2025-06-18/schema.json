@@ -549,10 +549,6 @@
             ],
             "type": "object"
         },
-        "Cursor": {
-            "description": "An opaque token used to represent a cursor for pagination.",
-            "type": "string"
-        },
         "ElicitRequest": {
             "description": "A request from the server to elicit additional information from the user via the client.",
             "properties": {
