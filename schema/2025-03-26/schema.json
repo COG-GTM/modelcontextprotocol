@@ -452,7 +452,7 @@
                     "$ref": "#/definitions/Role"
                 },
                 "stopReason": {
-                    "description": "The reason why sampling stopped, if known.",
+                    "description": "The reason why sampling stopped, if known.\n\nStandard values are \"endTurn\", \"stopSequence\", and \"maxTokens\", but other values may be used.",
                     "type": "string"
                 }
             },
