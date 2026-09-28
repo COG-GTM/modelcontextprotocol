@@ -952,8 +952,10 @@ export interface CreateMessageResult extends Result, SamplingMessage {
   model: string;
   /**
    * The reason why sampling stopped, if known.
+   *
+   * Standard values are "endTurn", "stopSequence", and "maxTokens", but other provider-specific values are also allowed.
    */
-  stopReason?: "endTurn" | "stopSequence" | "maxTokens" | string;
+  stopReason?: string;
 }
 
 /**
