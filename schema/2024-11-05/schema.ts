@@ -13,11 +13,6 @@ export const JSONRPC_VERSION = "2.0";
  */
 export type ProgressToken = string | number;
 
-/**
- * An opaque token used to represent a cursor for pagination.
- */
-export type Cursor = string;
-
 export interface Request {
   method: string;
   params?: {
@@ -299,7 +294,7 @@ export interface PaginatedRequest extends Request {
      * An opaque token representing the current pagination position.
      * If provided, the server should return results starting after this cursor.
      */
-    cursor?: Cursor;
+    cursor?: string;
   };
 }
 
@@ -308,7 +303,7 @@ export interface PaginatedResult extends Result {
    * An opaque token representing the pagination position after the last returned result.
    * If present, there may be more results available.
    */
-  nextCursor?: Cursor;
+  nextCursor?: string;
 }
 
 /* Resources */
