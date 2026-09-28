@@ -905,9 +905,9 @@ export interface CreateMessageResult extends Result, SamplingMessage {
    */
   model: string;
   /**
-   * The reason why sampling stopped, if known.
+   * The reason why sampling stopped, if known. Commonly one of "endTurn", "stopSequence", or "maxTokens", but implementations MAY use other values.
    */
-  stopReason?: "endTurn" | "stopSequence" | "maxTokens" | string;
+  stopReason?: string;
 }
 
 /**
