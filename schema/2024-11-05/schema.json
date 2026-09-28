@@ -434,10 +434,6 @@
             ],
             "type": "object"
         },
-        "Cursor": {
-            "description": "An opaque token used to represent a cursor for pagination.",
-            "type": "string"
-        },
         "EmbeddedResource": {
             "description": "The contents of a resource, embedded into a prompt or tool call result.\n\nIt is up to the client how best to render embedded resources for the benefit\nof the LLM and/or the user.",
             "properties": {
